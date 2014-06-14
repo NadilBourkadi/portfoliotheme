@@ -1,0 +1,154 @@
+@import url("mixins.less");
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+.portfolio-entry{
+
+    background: @dark-mid-blue;
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    vertical-align: top;
+
+    .image-column{
+
+        padding: 0px 40px;
+    
+    }
+
+    .image-background{
+     
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-image: url('../images/monitor-white.png');
+                background-size: 100% 100%;     
+                background-repeat: no-repeat;
+                background-origin: padding-box;
+                background-clip: padding-box;
+                padding-left: 2.2%;
+                padding-top: 2.2%;
+                padding-right: 2.2%;
+                padding-bottom: 9.075%;
+
+   
+        p{
+            text-align: center;
+            color: #fefefe;
+            font-weight: 900;
+            background: rgba(21, 42, 61, 0.7);
+            padding: 40px 0px;
+            text-shadow: 0px 0px 2px black;
+            vertical-align: middle;
+            display: block;
+            font-size: 15px;
+            opacity: 0;
+
+        } 
+    }
+       
+
+
+            img{
+                
+                min-height: 200px;
+                min-width: 210px;
+                max-width: 100%;
+                height: auto !important;
+                z-index: 100;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                 opacity: 1;
+                border: 10px solid @almost-white;
+                border-radius: 5px;
+
+                &:hover{
+                    opacity: 0.95;
+                }
+            }
+
+
+
+
+
+    .portfolio-description-container{
+
+       
+        display: table;
+
+        .portfolio-description{
+           
+
+            color: @almost-white;
+            font-size: 18px;
+            text-align: left;
+            line-height: 25px;
+           
+            vertical-align: middle;
+            
+            padding: 40px 20px;
+            height: 100%;
+            display: table-cell;
+
+
+
+
+        
+        }
+    }
+
+    .portfolio-entry-title{
+        color: @almost-white;
+        margin: 0px 0px;
+       text-align: center;
+     
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 50px;
+        margin: 10px 0px;
+        display: block;
+        font-family: 'Lato', sans-serif;
+    }
+
+    hr{
+        margin: 0px 0px;
+       
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+
+
+    &.temporary-odd-entry{
+        background-color: @almost-white;
+        color: @dark-blue;
+        
+        position: relative;
+
+        
+
+        .portfolio-description{
+            color: @dark-blue;
+            text-align: center;
+        }
+
+        .image-background{
+            background-image: url('../images/monitor.png');
+
+            img{
+                border-color: @dark-blue;
+            }
+           
+        }
+
+        .portfolio-entry-title{
+            color: @dark-blue;
+        }
+
+        hr{
+            border-color: @dark-blue;
+        }
+
+    }
+
+}
