@@ -96,6 +96,9 @@ body{
  background-color: @almost-white !important;
  color: white;
 
+ display: table;
+ width: 100%;
+ height: 100%;
 
 
 }
@@ -109,6 +112,7 @@ body{
     font-family: 'Lato', sans-serif;
     background-color: @dark-blue;
     color: @white;
+    background-image: url('../images/hero-background.png');
   
     font-weight: 700;
     font-size: 21px;
@@ -280,7 +284,26 @@ body{
 
 
 
+#wrapper {
+    min-height:100%;
+    position:relative;
+}
 
+footer {
+    width:100%; 
+   
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-top: 10px;
+    background-image: url('../images/hero-background.png');
+}
 
-
-
+.main-content{
+    display: table-row;
+    height: 10px;
+    div{
+        padding-bottom: 50px;
+    }
+    
+}
