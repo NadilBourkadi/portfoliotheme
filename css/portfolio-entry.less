@@ -9,16 +9,31 @@
     font-size: 0;
     vertical-align: top;
 
+    a{
+        color: inherit;
+        text-decoration: underline;
+
+        &:hover{
+            text-decoration: none;
+        }
+        
+    }
+
+
     .image-column{
 
         padding: 0px 40px;
     
     }
 
+    .image-selector, .image-selector-container{
+        padding-bottom: 0;
+    }
+
     .image-background{
      
-                margin-top: 30px;
-                margin-bottom: 30px;
+                margin-top: 25px;
+                margin-bottom: 25px;
                 background-image: url('../images/monitor-white.png');
                 background-size: 100% 100%;     
                 background-repeat: no-repeat;
@@ -85,7 +100,7 @@
            
             vertical-align: middle;
             
-            padding: 40px 20px;
+            padding: 24px 20px;
             height: 100%;
             display: table-cell;
 
@@ -121,14 +136,14 @@
 
     &.temporary-odd-entry{
         background-color: @almost-white;
-        color: @dark-blue;
+        color: darken(@darker-blue, 20%);
         
         position: relative;
 
         
 
         .portfolio-description{
-            color: @dark-blue;
+            color: darken(@darker-blue, 20%);
             text-align: center;
         }
 
@@ -142,7 +157,7 @@
         }
 
         .portfolio-entry-title{
-            color: @dark-blue;
+            color: @darker-blue;
         }
 
         hr{

@@ -167,7 +167,7 @@ body{
 
             &:hover{
                 li{
-                    color: #FFA200;
+                    color: darken(@almost-white, 5%);
                 }
             }
         }
@@ -200,7 +200,7 @@ body{
     color: white;
     
 
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -302,8 +302,15 @@ footer {
 .main-content{
     display: table-row;
     height: 10px;
-    div{
-        padding-bottom: 50px;
-    }
     
+    
+}
+
+.main-content > div:last-child{
+        margin-bottom: 50px;
+    }
+
+.main-content > .col-lg-12{
+    padding-left: 0px;
+    padding-right: 0px;
 }
