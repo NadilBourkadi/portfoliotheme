@@ -9,7 +9,7 @@
             <a href="">
                 <li>About</li>
             </a>
-            <a href="">
+            <a href="/wordpress/portfolio/">
                 <li>Portfolio</li>
             </a>
             <a href="">
