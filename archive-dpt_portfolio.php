@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 portfolio-description-container">
-                        <p class="portfolio-description"><?php the_excerpt(); ?></p>
+                        <div class="portfolio-description"><?php the_excerpt(); ?></div>
                     </div>
 
                 </div>
@@ -53,14 +53,14 @@
             
                 <div class="portfolio-entry temporary-odd-entry">
                     <div class="col-lg-12">
-                        <h1 class="portfolio-entry-title"><?php the_title(); ?></h1>
+                        <h1 class="portfolio-entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
                         <hr>
                     </div>
 
                     <div class="col-lg-6 col-lg-offset-1 portfolio-description-container">
-                        <p class="portfolio-description">
+                        <div class="portfolio-description">
                            <?php the_excerpt(); ?>
-                        </p>
+                        </div>
                     </div>
 
                     <div class="col-lg-4 image-column">
