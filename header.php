@@ -1,4 +1,4 @@
-<body class="">
+<body <?php body_class($class); ?>>
 
 <header class="topbar">
     <div class="col-lg-4">
