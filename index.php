@@ -24,7 +24,7 @@
 
         <div class="portfolio-entry">
            
-        <div class="row">
+        
             
             <div class="col-lg-4 image-column">
                 <div class="image-background">
@@ -43,7 +43,7 @@
                 <div class="portfolio-description"><?php the_content(); ?></div>
             </div>
 
-        </div>
+        
         </div>
 
 
