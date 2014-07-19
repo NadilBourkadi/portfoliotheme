@@ -4,25 +4,35 @@
 
 
 
+
+
+
+
+
     <div class="main-content">
         <div class="col-lg-12">
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
+            <?php if (has_post_thumbnail( $post->ID )) : ?>
+            <div class="top-hero thumbnail-is-present">
+            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+            <div class="featured-image-container" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+            <?php else: ?>
             <div class="top-hero">
-                <div class="col-lg-8">
+            <?php endif; ?>
+
+          
+                <div class="col-lg-12">
                     <h1 class="main-title"><a href="<?php the_permalink() ?>" rel="bookmark"> <?php the_title(); ?> </a></h1>
                     <div class="tags"><?php the_tags('', '<div class="sep"> //  </div>', ''); ?></div>
-                </div>
-                <?php if ( has_post_thumbnail() ) { ?> 
-      
-                <div class="col-lg-4 image-column">
-                    <div class="image-background">
-                        <a href="">
-                            <?php the_post_thumbnail('featured'); ?>
-                        </a>
+                    <div class="author-box">
+                    <p class="author-text"><?php the_time('F j, Y'); ?>, <?php the_time(); ?> by <a href=""><?php the_author(); ?></a></h1>
+                    
                     </div>
                 </div>
-            <?php } ?>
+              
+    
+          
             </div>
 
             

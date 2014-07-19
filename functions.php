@@ -2,6 +2,7 @@
 
 add_theme_support( 'post-thumbnails' ); 
 add_image_size('featured', 500, 250, true);
+add_image_size( 'single-post-thumbnail', 1600, 300 );
 
 // Register style sheet.
 
