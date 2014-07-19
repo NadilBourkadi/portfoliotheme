@@ -1,6 +1,7 @@
 <?php
 
 add_theme_support( 'post-thumbnails' ); 
+add_image_size('featured', 500, 250, true);
 
 // Register style sheet.
 

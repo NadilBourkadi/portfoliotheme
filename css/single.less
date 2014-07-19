@@ -1,10 +1,55 @@
+@import url("mixins.less");
+
 body.single{
     
-   .portfolio-description > p:first-child{
-    margin-top: 0;
+   .article-body{
+    font-size: 18px;
+    color: @almost-white;
+        h1,h2,h3,h4,h5,h6{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+    
    }
 
    .main-content > div:last-child{
-        margin-bottom: 180px;
+        margin-bottom: 80px;
+    }
+
+    .top-hero{
+
+        .main-title{
+            margin-top: -5px;
+        }
+
+        .tags{
+            text-align: center;
+            text-transform: uppercase;
+            color: darken(@almost-white, 40%);
+            letter-spacing: 1px;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .sep{ 
+                display: inline;
+                color: darken(@almost-white, 50%);
+            }
+            a{
+                color: darken(@almost-white, 40%);
+            }
+        }
+
+        .image-background{ 
+            img{
+            border: 6px solid @dark-blue;
+            border-radius: 4px;
+            }
+            text-align: center;
+        }
+
+
+
     }
 }
