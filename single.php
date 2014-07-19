@@ -25,11 +25,12 @@
         <div class="portfolio-entry">
            
         
-            
-            <div class="col-lg-4 image-column">
+        <?php if ( has_post_thumbnail() ) { ?> // check if the post has a Post Thumbnail assigned to it.
+      
+            <div class="col-lg-4 col-lg-offset-4 image-column">
                 <div class="image-background">
                     <a href="">
-                        <img src="http://lorempixel.com/g/1500/857/">
+                        <?php the_post_thumbnail(); ?>
                     </a>
                     <div class="image-selector-container">
                         <div class="image-selector"></div>
@@ -39,7 +40,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 portfolio-description-container">
+            <?php } ?>
+            <div class="col-lg-12 portfolio-description-container">
                 <div class="portfolio-description"><?php the_content(); ?></div>
             </div>
 
