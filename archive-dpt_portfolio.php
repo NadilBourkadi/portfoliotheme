@@ -8,7 +8,7 @@
     <div class="col-lg-12">
 
                 <div class="top-hero">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-12">
                         <h1 class="main-title">Portfolio</h1>
                         <h3 class="sub-title">Some webs, lovingly crafted by ya boi.</h3>
                     </div>

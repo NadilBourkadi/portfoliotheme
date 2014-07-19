@@ -1,0 +1,130 @@
+@import url("mixins.less");
+
+body .article-body{
+    .portfolio-description{padding-right: 40px !important;
+        padding-left: 40px !important;}
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-family: 'Lato';
+    color: @almost-white;
+        h1,h2,h3,h4,h5,h6{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    h1{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    h3{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    h4{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;    }
+
+    h5{
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    h6{
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    p{ margin-top: 10px;
+        margin-bottom: 10px;}
+
+    ol{
+        padding-left: 40px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        li{ list-style-type: decimal;
+            font-weight: 300;
+            position: relative;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        left: 40px;
+
+
+
+            }
+    }
+
+    ul{
+
+        li{
+            list-style-type: circle;
+            position: relative;
+        left: 40px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        }
+    }
+
+    blockquote{
+        position: relative;
+        margin: 0.25em 0;
+        padding: 0.25em 40px;
+        p{margin-bottom: 0;}
+    }
+
+    blockquote:before {
+        display: block;
+        content: "\201C";
+        font-size: 80px;
+        position: absolute;
+        left: -0px;
+        top: -20px;
+        color: @almost-white;
+    }
+
+    cite:before {
+        content: "\2014 \2009";
+    }
+    cite{
+        padding-left: 40px;
+        margin-top: 0;
+        font-size: 16px;
+        color: darken(@almost-white, 20%);
+        p{ margin-top: 0;}
+    }
+
+    img{
+        border: 2px solid darken(@almost-white,40%);
+        border-radius: 0px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+
+        &.alignright{
+            margin-left: 40px;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+        &.alignleft{
+            margin-top: 0;
+            margin-right: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    
+   }
