@@ -99,10 +99,12 @@ function do_output_buffer() {
     function format_comment() {  ?>
            <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
             <div class="comment-header">
-                <p><?php echo get_comment_date( $d, $comment_ID ); ?></p>
+                <div class="comment-avatar"><?php echo get_avatar( $comment_ID, 50 ); ?></div>
+                <p><span class="comment-author"><?php echo get_comment_author( $comment_ID );?></span> at <?php echo get_comment_time( $comment_ID ); ?> on <?php echo get_comment_date( $d, $comment_ID ); ?></p>
+                
             </div>
             <div class="comment-body">
-                <p>This is whack, yo.</p>
+                <p><?php echo get_comment_text( $comment_ID ) ?></p>
             </div>
         </li>  
    <?php } 

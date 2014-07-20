@@ -1,48 +1,109 @@
 @import url("mixins.less");
 
-h3#comments{
-    font-size: 20px;
-    margin-top: 20px;
+.comments-container{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 50px;
+    
+
+
+        form{
+            text-align: center;
+            padding: 0px 25px;
+        textarea{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background: darken(@almost-white, 2%);
+            border: 1px solid @dark-blue;
+            font-size: 16px;
+            padding: 10px;
+            font-weight: 500;
+        }
+        .log-out-link{
+            float: right;
+        }
+        .logged-in-as{
+            float: left;
+            text-align: left;
+        }
+    }
+
+}
+
+h3#comments,.leave-reply{
+    font-size: 28px;
+    
     font-family: 'Lato';
-    font-weight: 300;
+    font-weight: 500;
     color: @dark-blue;
-    text-align: left;
-    line-height: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 55px;
-    background: rgba(0,0,0,0.05);
+    text-align: center;
+    line-height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid @dark-blue;
+    border-top: 1px solid @dark-blue;
 }
 
 ol{ 
     }
 
 ol li.comment{
+
     color: @dark-blue;
-    padding: 10px 55px;
+    background: #ecf0f1;
     font-size: 16px;
+    display: block;
 
     font-weight: 300;
-    &.odd{ background: darken(@almost-white, 2%);}
+    &.even{ background: darken(@almost-white, 2%);
+        color: @darker-blue;
+        .comment-header{
+            border-bottom: 1px solid lighten(@dark-blue,70%);
+          
+        }
+
+    }
 
     .comment-body{
+        padding: 30px 40px;
+        color: @dark-blue;
+        font-size: 18px;
+        display: block;
+        overflow: auto;
+
         p{ 
             margin: 10px 0px;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 18px;
+            line-height: 25px;
+            display: block;
+            
         }
         padding-top: 0;
         padding-bottom: 0;
     }
 
     .comment-header{
+        padding: 0px 40px;
+        border-bottom: 1px solid lighten(@dark-blue,65%);
+      
+
         p{ margin: 0;
-        font-size: 18px;
-        font-weight: 700;}
+        font-size: 17px;
+        line-height: 20px;
+        text-align: left;
+        display: inline;
+       
+        }
+        .comment-avatar{
+            display: inline;
+            margin-right: 10px;
+        }
     }
 
     .comment-author{
         img, cite, span { display: inline;}
+        font-weight: 700;
     }
 
     a{
@@ -52,4 +113,18 @@ ol li.comment{
 
         &:hover{ text-decoration: none; }
     }
+
+    strong{
+        display: block;
+        margin: 10px 0px;
+    }
+
+    br{
+        line-height: 50px;
+        display: block;
+        margin: 15px 0;
+        content: ' ';
+    }
+
+
 }

@@ -57,18 +57,52 @@
 
 
         </div>
-    <div class="col-lg-7">
+
+    <div class="col-lg-12 related-posts-container">
+        <div class="col-lg-6 related-heading-container"><h3>Such Post</h3>
+        
+            <div class="col-lg-6">
+                
+                <div class="related-post-entry">
+                    <img src="http://lorempixel.com/g/550/300/">
+                    <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+                    </img>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                
+                <div class="related-post-entry">
+                    <img src="http://lorempixel.com/n/550/300/">
+                    <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+                    </img>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6 related-heading-container"><h3>Much Placehold</h3>
+        <div class="col-lg-6">
+            
+                <div class="related-post-entry">
+                    <img src="http://lorempixel.com/g/550/300/">
+                    <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+                    </img>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                
+                <div class="related-post-entry">
+                    <img src="http://lorempixel.com/n/550/300/">
+                    <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+                    </img>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 comments-container">
         <?php comments_template(); ?>
     </div>
-    <div class="col-lg-5 related-posts">
-        <h3>Related Posts Placeholder</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+   
 
 
 

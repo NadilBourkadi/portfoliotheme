@@ -18,7 +18,7 @@
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-    <h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to “<?php the_title(); ?>”:</h3>
+    <h3 id="comments"><?php comments_number('0 Comments', '1 Comment', '% Comments' );?></h3>
 
     <ol>
         <?php wp_list_comments('type=comment&callback=format_comment'); //this is the important part that ensures we call our custom comment layout defined above 
@@ -34,9 +34,10 @@
     <?php if ( comments_open() ) : ?>
         <!-- If comments are open, but there are no comments. -->
 
+
      <?php else : // comments are closed ?>
         <!-- If comments are closed. -->
-        <p class="nocomments">Comments are closed.</p>
+        <h3 class="nocomments" id="comments">Comments are closed.</h3>
 
     <?php endif; ?>
 <?php endif; ?>
@@ -45,7 +46,7 @@
 
 <div id="respond">
 
-<h3><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+<h3 class="leave-reply"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
 
 <div>
     <small><?php cancel_comment_reply_link(); ?></small>
@@ -59,7 +60,7 @@
 
 <?php if ( is_user_logged_in() ) : ?>
 
-<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
+<p><span class="logged-in-as">Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></span>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account" class="log-out-link">Log out &raquo;</a></p>
 
 <?php else : //this is where we setup the comment input forums ?>
 
