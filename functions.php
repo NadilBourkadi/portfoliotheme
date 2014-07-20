@@ -90,4 +90,8 @@ function do_output_buffer() {
         ob_start();
 }
 
+// Taken from http://themeshaper.com/2009/07/01/wordpress-theme-comments-template-tutorial/
+// Custom callback to list comments in the your-theme style
+
+
 ?>
