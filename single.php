@@ -57,8 +57,11 @@
 
 
         </div>
+    <div class="col-lg-12">
+        <?php comments_template(); ?>
     </div>
-<?php comments_template(); ?>
+    </div>
+
 
 
 <?php get_footer(); ?>

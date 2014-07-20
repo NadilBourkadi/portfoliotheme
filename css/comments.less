@@ -1,0 +1,33 @@
+@import url("mixins.less");
+
+h3#comments{
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Lato';
+    font-weight: 300;
+    color: @dark-blue;
+    text-align: left;
+    line-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 55px;
+    background: rgba(0,0,0,0.05);
+}
+
+ol .comment-body{
+    color: @dark-blue;
+    padding: 20px 55px;
+    font-weight: 300;
+
+    .comment-author{
+        img, cite, span { display: inline;}
+    }
+
+    a{
+        color: lighten(@dark-blue, 20%);
+        font-weight: 500;
+        text-decoration: underline;
+
+        &:hover{ text-decoration: none; }
+    }
+}
