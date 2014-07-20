@@ -17,7 +17,8 @@ function register_dils_portfolio_styles() {
     wp_register_style( 'dils-portfolio-portfolio-entry', get_template_directory_uri() . '/css/portfolio-entry.css'  );
     wp_register_style( 'dpt_single-styles', get_template_directory_uri() . '/css/single.css');
     wp_register_style( 'dpt_article-styles', get_template_directory_uri() . '/css/article-styling.css');
-    wp_register_style( 'dpt_comment-styles', get_template_directory_uri() . '/css/comments.css');
+     wp_register_style( 'dpt_comment-styles', get_template_directory_uri() . '/css/comments.css');
+    wp_register_style( 'dpt_related-post-styles', get_template_directory_uri() . '/css/related.css');
 }
 add_action( 'wp_enqueue_scripts', 'register_dils_portfolio_styles' );
 
@@ -33,6 +34,8 @@ function enqueue_dils_portfolio_styles(){
     wp_enqueue_style('dpt_single-styles');
     wp_enqueue_style('dpt_article-styles');
     wp_enqueue_style('dpt_comment-styles');
+    wp_enqueue_style('dpt_related-post-styles');
+   wp_enqueue_style('dpt_comment-styles');
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_dils_portfolio_styles' );
 
@@ -91,5 +94,18 @@ add_action('init', 'do_output_buffer');
 function do_output_buffer() {
         ob_start();
 }
+
+
+    function format_comment() {  ?>
+           <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+            <div class="comment-header">
+                <p><?php echo get_comment_date( $d, $comment_ID ); ?></p>
+            </div>
+            <div class="comment-body">
+                <p>This is whack, yo.</p>
+            </div>
+        </li>  
+   <?php } 
+
 
 ?>

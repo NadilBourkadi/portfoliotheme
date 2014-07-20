@@ -14,10 +14,32 @@ h3#comments{
     background: rgba(0,0,0,0.05);
 }
 
-ol .comment-body{
+ol{ 
+    }
+
+ol li.comment{
     color: @dark-blue;
-    padding: 20px 55px;
+    padding: 10px 55px;
+    font-size: 16px;
+
     font-weight: 300;
+    &.odd{ background: darken(@almost-white, 2%);}
+
+    .comment-body{
+        p{ 
+            margin: 10px 0px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .comment-header{
+        p{ margin: 0;
+        font-size: 18px;
+        font-weight: 700;}
+    }
 
     .comment-author{
         img, cite, span { display: inline;}
