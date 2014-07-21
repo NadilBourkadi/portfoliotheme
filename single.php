@@ -26,6 +26,7 @@
           
                 <div class="col-lg-12">
                     <h1 class="main-title"><a href="<?php the_permalink() ?>" rel="bookmark"> <?php the_title(); ?> </a></h1>
+                    
                     <div class="tags"><?php the_tags('', '<div class="sep"> //  </div>', ''); ?></div>
                     <div class="author-box">
 

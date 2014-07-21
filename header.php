@@ -10,14 +10,14 @@
 
     <div class="col-lg-8">
         <ul>
-            <a href="">
+            <a href="/wordpress/about/">
                 <li>About</li>
             </a>
             <a href="/wordpress/portfolio/">
                 <li>Portfolio</li>
             </a>
-            <a href="">
-                <li>Contact</li>
+            <a href="/wordpress/blog/">
+                <li>Blog</li>
             </a>
             <?php wp_head(); ?>
             

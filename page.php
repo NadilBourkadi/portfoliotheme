@@ -25,6 +25,9 @@
                 <div class="col-lg-12">
                     <h1 class="main-title"><a href="<?php the_permalink() ?>" rel="bookmark"> <?php the_title(); ?> </a></h1>
                     
+                    <h3 class="sub-title"><?php the_secondary_title(); ?></h3>
+
+                    
                     </div>
                 </div>
               
