@@ -1,3 +1,5 @@
+
+
 <body <?php body_class($class); ?>>
 
 <header class="topbar">
@@ -18,5 +20,8 @@
                 <li>Contact</li>
             </a>
             <?php wp_head(); ?>
+            
+
     </div>
 </header>
+
