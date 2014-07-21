@@ -17,27 +17,29 @@
 
 .col-lg-12.related-posts-container{ 
 
-    padding: 0px 4%;
+    padding: 0px 2%;
 
     .popular-post-entry{
 
 
         
         .popular-post-image-container{
-            border: 2px solid darken(@light-gray,20%); 
+            border: 5px solid @dark-blue; 
             width: 100%; 
-            height: 250px; 
+            height: 0px;
+            padding-bottom: 60%;
             background-size: cover;
             position: relative;
                 figcaption{
                     width: 100%;
-                    background: rgba(230,230,230,0.95);
+                    background: @dark-blue;
                     bottom: 0px;
                     left: 0;
-                    color: @dark-blue;
+                    color: @almost-white;
                     position: absolute; 
                     padding: 10px;
-                    font-weight: 700;
+                   
+                    font-weight: 300;
                     font-size: 17px;
                 }
         }
@@ -45,12 +47,12 @@
         div{
         margin: 30px 0px;
         background: @dark-blue;
-        opacity: 0.8;
+        
 
 
 
         &:hover{
-            opacity: 0.6;
+            opacity: 0.8;
         }
         }
     }
