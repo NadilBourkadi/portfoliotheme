@@ -124,23 +124,41 @@ body .article-body, .comment-body{
         display: block;
     }
 
+        .alignright{
+            margin-left: 40px;
+            margin-bottom: 0px;
+            margin-top: 0;
+            float: right;
+            img{
+                float: none;
+                margin: 0;
+                width: 100%;
+                min-width: 0 !important;
+                min-height: 0 !important;
+            }
+        }
+        .alignleft{
+            margin-top: 0;
+            margin-right: 40px;
+            margin-bottom: 0px;
+            float: left;
+
+            img{
+                float: none;
+                margin: 0;
+                width: 100%;
+                
+                min-width: 0 !important;
+                min-height: 0 !important;
+            }
+        }
+
     img{
         border: 2px solid darken(@almost-white,40%);
         border-radius: 0px;
         margin-bottom: 20px;
         margin-top: 20px;
 
-
-        &.alignright{
-            margin-left: 40px;
-            margin-bottom: 20px;
-            margin-top: 0;
-        }
-        &.alignleft{
-            margin-top: 0;
-            margin-right: 40px;
-            margin-bottom: 20px;
-        }
     }
 
     dl{
