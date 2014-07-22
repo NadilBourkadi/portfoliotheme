@@ -16,7 +16,7 @@
             <a href="/wordpress/portfolio/">
                 <li>Portfolio</li>
             </a>
-            <a href="/wordpress/blog/">
+            <a href="/wordpress/">
                 <li>Blog</li>
             </a>
             <?php wp_head(); ?>

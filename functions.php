@@ -23,6 +23,7 @@ function register_dils_portfolio_styles() {
     wp_register_style( 'dpt_article-styles', get_template_directory_uri() . '/css/article-styling.css');
      wp_register_style( 'dpt_comment-styles', get_template_directory_uri() . '/css/comments.css');
     wp_register_style( 'dpt_related-post-styles', get_template_directory_uri() . '/css/related.css');
+    wp_register_style( 'dpt_blog-archive-styles', get_template_directory_uri() . '/css/blog-archive-styles.css');
 }
 add_action( 'wp_enqueue_scripts', 'register_dils_portfolio_styles' );
 
@@ -39,13 +40,17 @@ function enqueue_dils_portfolio_styles(){
     wp_enqueue_style('dpt_article-styles');
     wp_enqueue_style('dpt_comment-styles');
     wp_enqueue_style('dpt_related-post-styles');
-   wp_enqueue_style('dpt_comment-styles');
+    wp_enqueue_style('dpt_comment-styles');
+    wp_enqueue_style('dpt_blog-archive-styles');
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_dils_portfolio_styles' );
 
 
 
-
+function custom_excerpt_length( $length ) {
+    return 160;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 
