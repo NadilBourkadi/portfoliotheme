@@ -1,6 +1,12 @@
 @import url("mixins.less");
 
 body .article-body, .comment-body{
+
+    .portfolio-description-container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .portfolio-description{padding-right: 5% !important;
         padding-left: 5% !important;}
     padding-top: 25px;
@@ -129,12 +135,22 @@ body .article-body, .comment-body{
             margin-bottom: 0px;
             margin-top: 0;
             float: right;
+            max-width: 100%;
+            width: auto;
+            height: 100%;
+            
+            overflow: hidden;
             img{
                 float: none;
                 margin: 0;
-                width: 100%;
+                width: auto;
+                display: inline-block;
                 min-width: 0 !important;
                 min-height: 0 !important;
+                max-width: 100%;
+                overflow: hidden;
+                height: 100%;
+
             }
         }
         .alignleft{
@@ -142,14 +158,46 @@ body .article-body, .comment-body{
             margin-right: 40px;
             margin-bottom: 0px;
             float: left;
+            max-width: 100%;
+            height: 100%;
+
+           
+            overflow: hidden;
 
             img{
                 float: none;
                 margin: 0;
-                width: 100%;
+                overflow: hidden;
+                display: inline-block;
+                height: 100%;
                 
+                max-width: 100%;
                 min-width: 0 !important;
                 min-height: 0 !important;
+                height: 100%;
+                display: inline-block;
+            }
+        }
+
+        .alignnone, .alignleft, .aligncenter, .alignright{
+            
+            
+            overflow: hidden;
+            
+            display: inline;
+            min-width: 0 !important;
+                min-height: 0 !important;
+               
+                height: 100%;
+
+            
+            img{
+                max-width: 100%;
+                min-width: 0 !important;
+                min-height: 0 !important;
+                height: 100%;
+                display: inline-block;
+                
             }
         }
 
@@ -158,6 +206,7 @@ body .article-body, .comment-body{
         border-radius: 0px;
         margin-bottom: 20px;
         margin-top: 20px;
+        max-width: 100%;
 
     }
 
