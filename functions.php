@@ -6,6 +6,8 @@ add_theme_support( 'post-thumbnails' );
 add_image_size('featured', 500, 250, true);
 add_image_size( 'single-post-thumbnail', 1600, 300 );
 
+register_nav_menu( 'top-menu-nav', 'Primary Header Menu' ); 
+
 // Register style sheet.
 
 

@@ -49,19 +49,13 @@
         <?php endif; ?>
 
         <div class="portfolio-entry article-body">
-           
-        
         
             <div class="col-lg-12 portfolio-description-container">
                 <div class="portfolio-description"><?php the_content(); ?></div>
             </div>
-
         
         </div>
-
-
-
-        </div>
+    </div>
 
     <?php get_template_part( 'loop', 'recent' ); ?>
     
