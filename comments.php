@@ -63,21 +63,21 @@
 <p><span class="logged-in-as">Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></span>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account" class="log-out-link">Log out &raquo;</a></p>
 
 <?php else : //this is where we setup the comment input forums ?>
-<div class="col-lg-7 col-lg-push-5">
-<p class="input-field-row"><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
-<label for="author"><span class="label">Name <?php if ($req) echo "(required)"; ?></span></label></p>
+<div class="col-lg-12">
+<p class="input-field-row"><label for="author"><span class="label">Name <?php if ($req) echo "(required)"; ?></span></label><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+</p>
 
-<p class="input-field-row"><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-<label for="email"><span class="label">Mail (will not be published) <?php if ($req) echo "(required)"; ?></span></label></p>
+<p class="input-field-row"><label for="email"><span class="label">Mail (will not be published) <?php if ($req) echo "(required)"; ?></span></label><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
+</p>
 
-<p class="input-field-row"><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
-<label for="url"><span class="label">Website</span></label></p>
+<p class="input-field-row"><label for="url"><span class="label">Website</span></label><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
+</p>
 </div>
 <?php endif; ?>
 
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>-->
-<div class="col-lg-5 col-lg-pull-7">
-<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+<div class="col-lg-12">
+<p><label for="comment"><span class="label">Message</span></label><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
 
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="Post" />
 <?php comment_id_fields(); ?>

@@ -57,7 +57,7 @@
         </div>
     </div>
 
-    <?php get_template_part( 'loop', 'recent' ); ?>
+        <?php get_template_part( 'loop', 'recent' ); ?>
     
 
     <div class="col-lg-12 comments-container">
