@@ -16,50 +16,39 @@
             padding-bottom: 10px;
 
             input{
-                            background: darken(@almost-white, 2%);
-            border: 1px solid @dark-blue;
+                background: darken(@almost-white, 2%);
+                border: 1px solid @dark-blue;
             }
             
-        input#author{
-            float: left;
-            width: 40%;
-
-        }
-
-        label[for=author]{
-            float: left;
-            padding-left: 2%;
-            width: 60%;
+        p.input-field-row{
             text-align: left;
-            margin-bottom: 20px;
+            
+            width: 100%;
+            span.label{
+                width: 45%;
+                display: inline-block;
+                clear: left;
+                line-height: 30px;
+                font-size: 16px;
+                height: 20px;
+                position: relative;
+            }
         }
 
-        input#email{
-            float: left;
-            width: 40%;
-            clear: left;
+        p.input-field-row input{
+            height: 25px;
+            width: 100%;
+            display: inline;
+            padding: 0px 10px;
+            font-size: 16px;
+            
         }
 
-        label[for=email]{
-            float: left;
-            padding-left: 2%;
-            width: 60%;
-            text-align: left;
-            margin-bottom: 20px;
-        }
-        input#url{
-            float: left;
-            width: 40%;
-            clear: left;
-        }
+    
 
-        label[for=url]{
-            float: left;
-            padding-left: 2%;
-            width: 60%;
-            text-align: left;
-            margin-bottom: 20px;
-        }
+    
+
+    
 
         input#submit{
             background: @dark-blue;
