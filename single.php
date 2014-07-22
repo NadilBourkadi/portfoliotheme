@@ -79,7 +79,8 @@
                     <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                     ?>
                     <div class="popular-post-image-container" style="background-image: url('<?php echo $image[0]; ?>'); ">
-                    <figcaption><?php the_title(); ?></figcaption>
+                        <div class="opacity-cover"></div>
+                        <figcaption><?php the_title(); ?></figcaption>
                     </div>
                 </div>
             </a>
