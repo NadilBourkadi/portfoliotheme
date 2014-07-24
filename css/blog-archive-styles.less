@@ -8,28 +8,99 @@
 .blog{
     #wrapper{
         .main-content{
-            .portfolio-entry{
+            .portfolio-entry.temporary-odd-entry{
+
+
+                 
+                    p{text-align: right; }
+                    .read-more{
+                        
+                        text-align: right;
+                        color: black;
+
+                    }
+                    .post-meta-container{
+
+                        p{
+                            font-size: 15px;
+                            color: @darker-blue;
+                             text-align: left;
+                        }
+                        .post-meta-author,.post-meta-time,.post-meta-date{
+                            color: lighten(@dark-blue, 25%);
+                            
+                        }
+                    }
+
+                    .featured-image-container .featured-image{
+                        border-color: @darker-blue;
+                    }
+
+                    
                 
-                .image-column{
-                    padding: 0;
-                }
-                .image-background{
-                    text-align: center;
-                    .featured-image{
-                        display: inline-block;
-                        height: 95%;
-                        width: 95%;
-                        position: relative;
+            }
+
+            .portfolio-entry{
+
+                    .portfolio-description{
+                        
+                    }
+
+                    .read-more{
+                        
+                        text-align: left;
+                        font-weight: 500;
+                        color: white;
+                        font-size: 18px;
+
+                    }
+                
+                
+                    .post-meta-container{
+                        text-align: right;
+                        margin: 10px 0px;
+                        margin-bottom: 20px;
+                        width: 100%;
+
+                        
+                        p{
+                            font-size: 15px;
+                            color: @almost-white;
+                            margin: 0px;
+                            font-weight: 500;
+                        }
+
+                        .post-meta-author,.post-meta-time,.post-meta-date{
+                            color: @silver;
+                        }
+
+
+                    }
+                    
+                    .featured-image-container{
+
+                        .featured-image{
+
+                        width: 100%;
+                        padding-bottom: 60%;
+                        background-size: cover;
+                        background-position: center center;
                         border: 1px solid @light-gray;
+                        margin-left: auto;
+                        margin-right: auto;
+                        }
+                       
+                        margin-top: 20px;
+                       
+                        
+                        
                     }
 
 
-                }
-
-
-            .temporary-odd-entry{
                 
-            }
+
+
+ 
                 
                 position: relative;
                 a.zonal{
@@ -50,6 +121,7 @@
                     }
                 }
             }
+
         }
     }
 }

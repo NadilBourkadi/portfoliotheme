@@ -45,10 +45,19 @@ function enqueue_dils_portfolio_styles(){
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_dils_portfolio_styles' );
 
+add_action('init', 'manual_excerpts_for_default_posts');
+function manual_excerpts_for_default_posts(){
+    add_post_type_support( 'post', 'excerpt' );
+}
+
+function new_excerpt_more( $more ) {
+    return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 
 function custom_excerpt_length( $length ) {
-    return 160;
+    return 100;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
