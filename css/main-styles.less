@@ -115,21 +115,24 @@ body{
 
 .topbar{
     font-family: 'Lato', sans-serif;
-    background-color: @dark-blue;
-    color: @white;
-    background-image: url('../images/hero-background.png');
+    padding: 0 !important;
+     clear: both;
   
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
     
     width: 100%;
-    height: 50px;
+   
     z-index: 2000;
     top: 0;
     left: 0;
     border-bottom: 1px solid rgba(255,255,255, 0.1);
-
+    .col-lg-4{
+        background-color: @dark-blue;
+        color: @white;
+        background-image: url('../images/hero-background.png');
+    }
     h3{
         float: left;
         line-height: 20px;
@@ -140,6 +143,7 @@ body{
         padding-left: 20px;
         font-size: 20px;
         color: @almost-white;
+
         em{
             font-weight: 900;
             padding-right: 0px;
@@ -149,33 +153,43 @@ body{
     
     ul{
         text-align: right;
-        padding-right: 0px;
+        padding-right: 20px;
+           background-color: @dark-blue;
+    color: @white;
+    background-image: url('../images/hero-background.png');
+
         
-        a{
+        
 
-            li{
-                display: inline-block;
-                margin: 0px 0px;
+            li{ height: 50px;
                 padding: 0px 20px;
-                height: 50px;
-                line-height: 20px;
-                padding-top: 15px;
-              
-                color: #fefefe;
-                font-size: 20px;
-                font-weight: 500;
-                
-                vertical-align: text-bottom;
-         
+                width: auto;
+                float: right;
 
-            }
+                a{
+                    display: inline-block;
+                    margin: 0px 0px;
+                    
+                    
+                    line-height: 20px;
+                    padding-top: 15px;
+                  
+                    color: #fefefe;
+                    font-size: 20px;
+                    font-weight: 500;
 
-            &:hover{
-                li{
-                    color: darken(@almost-white, 5%);
+                    
+                    vertical-align: text-bottom;
+                    &:hover{
+                        color: darken(@almost-white, 5%);
+                        text-decoration: none;
+                    }
+             
                 }
             }
-        }
+
+ 
+        
 
 
     }

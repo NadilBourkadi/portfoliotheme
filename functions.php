@@ -8,6 +8,7 @@ add_image_size( 'single-post-thumbnail', 1600, 300 );
 
 register_nav_menu( 'top-menu-nav', 'Primary Header Menu' ); 
 
+
 // Register style sheet.
 
 
