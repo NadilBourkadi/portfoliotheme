@@ -113,15 +113,27 @@ body{
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .topbar{
+        h3{
+            float: right !important;
+        }
+    }
+}
+
 .topbar{
     font-family: 'Lato', sans-serif;
     padding: 0 !important;
-     clear: both;
+     
+     background-color: @dark-blue;
+    color: @white;
+    background-image: url('../images/hero-background.png');
   
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
-    
+    height: auto;
+
     width: 100%;
    
     z-index: 2000;
@@ -138,8 +150,10 @@ body{
         line-height: 20px;
         padding-top: 15px;
         font-weight: 500;
+        height: auto;
         text-transform: none;
-        height: 50px;
+        padding-bottom: 15px;
+        
         padding-left: 20px;
         font-size: 20px;
         color: @almost-white;
@@ -154,9 +168,7 @@ body{
     ul{
         text-align: right;
         padding-right: 20px;
-           background-color: @dark-blue;
-    color: @white;
-    background-image: url('../images/hero-background.png');
+           
 
         
         
