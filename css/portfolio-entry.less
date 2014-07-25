@@ -32,8 +32,8 @@
 
     .image-background{
      
-                margin-top: 25px;
-                margin-bottom: 25px;
+                margin-top: 20px;
+                margin-bottom: 20px;
                 background-image: url('../images/monitor-white.png');
                 background-size: 100% 100%;     
                 background-repeat: no-repeat;
@@ -43,6 +43,29 @@
                 padding-top: 2.2%;
                 padding-right: 2.2%;
                 padding-bottom: 9.075%;
+
+
+
+                .featured-image{
+
+                width: 100%;
+                padding-bottom: 55%;
+                background-size: cover;
+                background-position: center center;
+                margin-left: auto;
+                margin-right: auto;
+                border: 7px solid @almost-white;
+
+                    &:hover{
+                        opacity: 0.9;
+                    }
+                }
+                   
+                    
+                   
+                    
+                    
+                
 
    
         p{
@@ -67,6 +90,7 @@
                 min-height: 200px;
                 min-width: 210px;
                 max-width: 100%;
+                width: 100%;
                 height: auto !important;
                 z-index: 100;
                 margin-left: auto;
@@ -91,6 +115,7 @@
         display: table;
 
         .portfolio-description{
+            padding: 0;
 
            
             p{
@@ -102,8 +127,7 @@
             }
             vertical-align: middle;
             
-            padding: 0px 20px;
-            padding-right: 0;
+            padding: 0px 0px;
 
             height: 100%;
             display: table-cell;
@@ -152,14 +176,15 @@
 
         .portfolio-description{
             p{ color: darken(@darker-blue, 20%); }
-            text-align: center;
-            padding-right: 20px;
+            
+            
+            text-align: right !important;
         }
 
         .image-background{
             background-image: url('../images/monitor.png');
 
-            img{
+            a .featured-image{
                 border-color: @dark-blue;
             }
            
@@ -181,6 +206,11 @@
 
     .portfolio-description p{
         padding-right: 25px;
+
     }
 
+}
+
+.portfolio-entry.temporary-odd-entry .portfolio-description-container .portfolio-description p{
+    text-align: right;
 }

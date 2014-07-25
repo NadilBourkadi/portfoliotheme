@@ -353,3 +353,84 @@ footer {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+#wrapper{
+    .main-content{
+
+        .pagination{
+            background-color: @dark-blue;
+            padding: 10px;
+            height: 55px;
+            
+            i{
+                padding: 0px 20px;
+                position: absolute;
+
+                &.fa-chevron-left{
+
+                }
+
+                &.fa-chevron-right{
+                    right: 0;
+
+                }
+            }
+
+            span{
+                
+                position: absolute;
+                
+                width: 90%;
+                top: -2px;
+                
+
+                &.newer{
+                    right: 60px;
+                    text-align: right;
+                }
+
+                &.older{
+                    left: 60px;
+                }
+            }
+            a{
+                font-family: 'Lato';
+                position: relative;
+                width: 50%;
+
+                &:hover{
+                    a,i,span{
+                        color: @silver;
+                    }
+                }
+
+            }
+            a, i,span{
+                font-size: 20px;
+                color: @almost-white;
+                line-height: 40px;
+                font-weight: 700;
+                text-transform: uppercase;  
+                letter-spacing: 3px;
+
+                
+
+
+            }
+
+            .alignleft{
+                a{float: left;}
+            }
+
+            .alignright{
+                a{
+                    float: right;
+                }
+            }
+
+
+
+  
+        }
+    }
+}
