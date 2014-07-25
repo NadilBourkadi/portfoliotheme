@@ -12,7 +12,7 @@
             .pagination{
                 background-color: @dark-blue;
                 padding: 10px;
-                height: 40px;
+                height: 55px;
                 
                 i{
                     padding: 0px 20px;
@@ -31,8 +31,9 @@
                 span{
                     
                     position: absolute;
-                    top: -1px;
+                    
                     width: 90%;
+                    top: -2px;
                     
 
                     &.newer{
@@ -48,13 +49,22 @@
                     font-family: 'Lato';
                     position: relative;
                     width: 50%;
+
+                    &:hover{
+                        a,i,span{
+                            color: @silver;
+                        }
+                    }
+
                 }
                 a, i,span{
                     font-size: 20px;
                     color: @almost-white;
-                    line-height: 20px;
-                    text-transform: uppercase;
-                    font-weight: 300;
+                    line-height: 40px;
+                    font-weight: 700;
+                    text-transform: uppercase;  
+                    letter-spacing: 3px;
+
                     
 
 
