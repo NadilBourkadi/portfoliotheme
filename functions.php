@@ -25,6 +25,7 @@ function register_dils_portfolio_styles() {
      wp_register_style( 'dpt_comment-styles', get_template_directory_uri() . '/css/comments.css');
     wp_register_style( 'dpt_related-post-styles', get_template_directory_uri() . '/css/related.css');
     wp_register_style( 'dpt_blog-archive-styles', get_template_directory_uri() . '/css/blog-archive-styles.css');
+    
 }
 add_action( 'wp_enqueue_scripts', 'register_dils_portfolio_styles' );
 

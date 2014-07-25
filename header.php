@@ -25,6 +25,7 @@
  
         </ul> -->
         <?php wp_head(); ?>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
         
         <?php wp_nav_menu(array(
             'theme-location' =>  'top-menu-nav',

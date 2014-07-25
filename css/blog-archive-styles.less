@@ -8,15 +8,88 @@
 .blog{
     #wrapper{
         .main-content{
+
+            .pagination{
+                background-color: @dark-blue;
+                padding: 10px;
+                height: 40px;
+                
+                i{
+                    padding: 0px 20px;
+                    position: absolute;
+
+                    &.fa-chevron-left{
+
+                    }
+
+                    &.fa-chevron-right{
+                        right: 0;
+
+                    }
+                }
+
+                span{
+                    
+                    position: absolute;
+                    top: -1px;
+                    width: 90%;
+                    
+
+                    &.newer{
+                        right: 60px;
+                        text-align: right;
+                    }
+
+                    &.older{
+                        left: 60px;
+                    }
+                }
+                a{
+                    font-family: 'Lato';
+                    position: relative;
+                    width: 50%;
+                }
+                a, i,span{
+                    font-size: 20px;
+                    color: @almost-white;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    
+
+
+                }
+
+                .alignleft{
+                    a{float: left;}
+                }
+
+                .alignright{
+                    a{
+                        float: right;
+                    }
+                }
+
+
+
+      
+            }
+
             .portfolio-entry.temporary-odd-entry{
 
-
+                    .portfolio-description{
+                        h2.subtitle{
+                            text-align: right;
+                            color: black; 
+                        }
+                    }
                  
                     p{text-align: right; }
                     .read-more{
                         
                         text-align: right;
                         color: black;
+
 
                     }
                     .post-meta-container{
@@ -27,7 +100,7 @@
                              text-align: left;
                         }
                         .post-meta-author,.post-meta-time,.post-meta-date{
-                            color: lighten(@dark-blue, 25%);
+                            color: lighten(@dark-blue, 15%);
                             
                         }
                     }
@@ -43,6 +116,15 @@
             .portfolio-entry{
 
                     .portfolio-description{
+
+                        h2.subtitle{
+                            font-size: 20px;
+                            line-height: 20px;
+                            color: white;
+                            font-weight: 500;
+                            margin-top: 20px;
+                            font-family: 'Lato';
+                        }
                         
                     }
 

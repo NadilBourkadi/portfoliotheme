@@ -1,6 +1,7 @@
             <?php if (have_posts()): ?>
             <?php while (have_posts()): ?>
             <?php the_post(); ?>
+            
 
             <?php $testvariable = ($xyz++%2); ?>           
            
@@ -17,7 +18,7 @@
                     
                     
                     <div class="col-lg-3 col-lg-offset-1 featured-image-container">
-                        <a class="col-lg-12" href="">
+                        <a class="col-lg-12" href="<?php the_permalink(); ?>">
                         <div class="featured-image" style="background-image: url('<?php echo $image[0]; ?>')">
                         
                         </div>
@@ -31,6 +32,7 @@
                     
                     <div class="col-lg-7  portfolio-description-container">
                         <div class="portfolio-description">
+                        <h2 class="subtitle"><?php the_secondary_title(); ?></h2>
                         <?php the_excerpt(); ?>
                         <p class="read-more">
                            <a href="<?php the_permalink(); ?>">Read More</a>
@@ -53,6 +55,7 @@
 
                     <div class="col-lg-7 col-lg-offset-1 portfolio-description-container">
                         <div class="portfolio-description">
+                            <h2 class="subtitle"><?php the_secondary_title(); ?></h2>
                            <?php the_excerpt(); ?>
                            <p class="read-more">
                            <a href="<?php the_permalink(); ?>">Read More</a>
@@ -60,7 +63,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 featured-image-container">
-                        <a class="col-lg-12" href="" href="">
+                        <a class="col-lg-12" href="<?php the_permalink(); ?>">
                             <div class="featured-image" style="background-image: url('<?php echo $image[0]; ?>')">
                         
                             </div>
@@ -72,9 +75,9 @@
                         </div>
                     </div>
 
-
                 </div>
                 <?php endif; ?>
+
     <?php endwhile; ?>
 <?php else: ?>
     <h1 class="page-title">No Posts Found</h1>
