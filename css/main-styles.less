@@ -121,93 +121,7 @@ body{
     }
 }
 
-.topbar{
-    font-family: 'Lato', sans-serif;
-    padding: 0 !important;
-     
-     background-color: @dark-blue;
-    color: @white;
-    background-image: url('../images/hero-background.png');
-  
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 30px;
-    height: auto;
 
-    width: 100%;
-   
-    z-index: 2000;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid rgba(255,255,255, 0.1);
-    .col-lg-4{
-        background-color: @dark-blue;
-        color: @white;
-        background-image: url('../images/hero-background.png');
-    }
-    h3{
-        float: left;
-        line-height: 20px;
-        padding-top: 15px;
-        font-weight: 500;
-        height: auto;
-        text-transform: none;
-        padding-bottom: 15px;
-        
-        padding-left: 20px;
-        font-size: 20px;
-        color: @almost-white;
-
-        em{
-            font-weight: 900;
-            padding-right: 0px;
-            color: #fefefe;
-        }
-    }
-    
-    ul{
-        text-align: right;
-        padding-right: 20px;
-           
-
-        
-        
-
-            li{ height: 50px;
-                padding: 0px 20px;
-                width: auto;
-                float: right;
-
-                a{
-                    display: inline-block;
-                    margin: 0px 0px;
-                    
-                    
-                    line-height: 20px;
-                    padding-top: 15px;
-                  
-                    color: #fefefe;
-                    font-size: 20px;
-                    font-weight: 500;
-
-                    
-                    vertical-align: text-bottom;
-                    &:hover{
-                        color: darken(@almost-white, 5%);
-                        text-decoration: none;
-                    }
-             
-                }
-            }
-
- 
-        
-
-
-    }
-
-
-}
 
 .background-container{
     background-image: url('http://art.ngfiles.com/images/215/clyphe_pixel-landscape-at-night.png');
@@ -354,83 +268,40 @@ footer {
     padding-right: 0px;
 }
 
-#wrapper{
-    .main-content{
-
-        .pagination{
-            background-color: @dark-blue;
-            padding: 10px;
-            height: 55px;
-            
-            i{
-                padding: 0px 20px;
-                position: absolute;
-
-                &.fa-chevron-left{
-
-                }
-
-                &.fa-chevron-right{
-                    right: 0;
-
-                }
-            }
-
-            span{
-                
-                position: absolute;
-                
-                width: 90%;
-                top: -2px;
-                
-
-                &.newer{
-                    right: 60px;
-                    text-align: right;
-                }
-
-                &.older{
-                    left: 60px;
-                }
-            }
-            a{
-                font-family: 'Lato';
-                position: relative;
-                width: 50%;
-
-                &:hover{
-                    a,i,span{
-                        color: @silver;
-                    }
-                }
-
-            }
-            a, i,span{
-                font-size: 20px;
-                color: @almost-white;
-                line-height: 40px;
-                font-weight: 700;
-                text-transform: uppercase;  
-                letter-spacing: 3px;
-
-                
-
-
-            }
-
-            .alignleft{
-                a{float: left;}
-            }
-
-            .alignright{
-                a{
-                    float: right;
-                }
-            }
-
-
-
+div.category-bar{
   
+   padding: 10px 20px;
+   border-top: 1px solid @silver;
+   
+    h3{
+        color: @dark-blue;
+        font-family: 'Lato';
+        font-size: 20px;
+        line-height: 25px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        
+   }
+
+    ul {
+        a{
+            color: @dark-blue;
+        }
+        color: lighten(@dark-blue, 20%);
+       
+        font-family: 'Lato';
+       
+        li{
+            display: inline-block;
+            position: relative;
+            
+            background: @light-gray;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 2px;
+            border: 1px solid lighten(@silver,10%);
+           
+            
         }
     }
 }
