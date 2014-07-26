@@ -270,8 +270,8 @@ footer {
 
 div.category-bar{
   
-   padding: 20px 40px;
-   padding-bottom: 15px;
+   padding: 10px 40px;
+   padding-bottom: 5px;
    background: lighten(@light-gray, 1%);
    border-top: 1px solid @silver;
 
@@ -332,6 +332,11 @@ div.category-bar{
             padding: 5px 10px;
             border-radius: 2px;
             border: 1px solid lighten(@silver,5%);
+
+            &.current-cat{
+                background: darken(@light-gray, 10%);
+                border-color: darken(@silver,5%);
+            }
            
             
         }
