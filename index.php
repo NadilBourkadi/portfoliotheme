@@ -2,7 +2,11 @@
 
 <?php get_header(); ?>
 
-
+<?php 
+$classes = get_body_class();
+if (in_array('blog',$classes)){
+    $is_blog = true;
+} ?>
 
 <div class="main-content">
     <div class="col-lg-12">

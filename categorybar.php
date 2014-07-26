@@ -6,6 +6,7 @@
 ?>
 <?php
 
+
 $classes = get_body_class();
 if (in_array('blog',$classes)){
     $is_blog = true;
