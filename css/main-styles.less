@@ -270,8 +270,8 @@ footer {
 
 div.category-bar{
   
-   padding: 25px 40px;
-   padding-bottom: 20px;
+   padding: 20px 40px;
+   padding-bottom: 15px;
    background: lighten(@light-gray, 1%);
    border-top: 1px solid @silver;
 
@@ -308,6 +308,15 @@ div.category-bar{
             color: @dark-blue;
             height: 100%;
             width: 100%;
+
+            &:after{
+            font-family: FontAwesome; // or whatever the font awesome family is registered as
+            content: '\f0b0';
+            padding-left: 10px;
+            color: @dark-blue;
+            }
+
+
         }
         color: lighten(@dark-blue, 20%);
        

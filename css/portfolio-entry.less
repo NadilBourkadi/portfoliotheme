@@ -1,24 +1,6 @@
 @import url("mixins.less");
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-
-.portfolio-entry{
-
-    background: @dark-mid-blue;
-    display: inline-block;
-    width: 100%;
-    font-size: 0;
-    vertical-align: top;
-
-    a{
-        color: inherit;
-        text-decoration: underline;
-
-        &:hover{
-            text-decoration: none;
-        }
-        
-    }
-
+.post-type-archive-dpt_portfolio #wrapper .main-content .col-lg-12 .portfolio-entry{
 
     .image-column{
 
@@ -82,6 +64,26 @@
 
         } 
     }
+}
+.portfolio-entry{
+
+    background: @dark-mid-blue;
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    vertical-align: top;
+
+    a{
+        color: inherit;
+        text-decoration: underline;
+
+        &:hover{
+            text-decoration: none;
+        }
+        
+    }
+
+
        
 
 
@@ -182,10 +184,10 @@
         }
 
         .image-background{
-            background-image: url('../images/monitor.png');
+            background-image: url('../images/monitor.png') !important;
 
             a .featured-image{
-                border-color: @dark-blue;
+                border-color: @dark-blue !important;
             }
            
         }
