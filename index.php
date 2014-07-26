@@ -8,9 +8,30 @@
     <div class="col-lg-12">
 
         <div class="top-hero">
+
             <div class="col-lg-12">
-                <h1 class="main-title">Blog</h1>
-                <h3 class="sub-title">Some posts, lovingly crafted by ya boi.</h3>
+                <h1 class="main-title"><?php  
+                    if ( have_posts() ){
+                        the_post();
+                        if (get_queried_object()->name == ''){ 
+                            echo "Blog";
+                            rewind_posts(); 
+                        }
+                        elseif(is_category()){
+                            echo "hello!";
+                        }
+                        else{
+                            $post_type = get_post_type( $post->ID );
+                            echo post_type_archive_title();
+                        }
+                        rewind_posts(); 
+                    }
+                ?></h1>
+
+                <h3 class="sub-title">Some posts, lovingly crafted by ya boi. 
+
+                </h3>
+
             </div>
         </div>
 

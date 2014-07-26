@@ -6,6 +6,8 @@
             <?php $testvariable = ($xyz++%2); ?>           
            
             <?php if ($testvariable == 0): ?>
+
+            
             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'featured' ); ?>
                 <div class="portfolio-entry">
                     <div class="col-lg-12">
