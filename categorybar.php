@@ -18,7 +18,7 @@ if(is_archive() && 'dpt_portfolio' != get_post_type() or $is_blog == true){
 <div class="category-bar col-lg-12">
 
         <ul class="">
-        <div class="category-dropdown"><h3>Category Filter</h3><i class="fa fa-search"></i></div>    
+        <div class="category-dropdown"><h3>Popular Categories</h3><i class="fa fa-search"></i></div>    
             <?php
         wp_list_categories( array(
 
