@@ -2,9 +2,10 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part('categorybar'); ?>
+
 
 <div class="main-content">
+    <?php get_template_part('categorybar'); ?>
     <div class="col-lg-12">
 
         <div class="top-hero">
