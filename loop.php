@@ -13,7 +13,10 @@
                     <div class="col-lg-12">
                         <h1 class="portfolio-entry-title">
                             <a class="zonal" href="<?php the_permalink(); ?>" rel="bookmark"></a>
-                            <?php the_title(); ?></h1>
+                            <?php dpt_insert_post_format_icon(); ?>
+                            <?php the_title(); ?>
+                                  
+                        </h1>
                         <hr>
                     </div>
                 
@@ -27,7 +30,8 @@
                         </a>
 
                         <div class="col-lg-12 post-meta-container">
-                            <p>by <span class="post-meta-author"><?php the_author(); ?></span></p>
+                            <p>by <span class="post-meta-author"><?php the_author(); ?></span>              
+                            </p>
                             <p>at <span class="post-meta-time"><?php the_time(); ?>, </span><span class="post-meta-date"><?php the_date(); ?></span></p>
                         </div>
                     </div>
@@ -51,7 +55,10 @@
                 <div class="portfolio-entry temporary-odd-entry">
                     <div class="col-lg-12">
                         <a class="zonal" href="<?php the_permalink(); ?>" rel="bookmark"></a>
-                        <h1 class="portfolio-entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+                        <h1 class="portfolio-entry-title">
+                            <?php dpt_insert_post_format_icon(); ?> 
+                            <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+                        </h1>
                         <hr>
                     </div>
 

@@ -10,7 +10,7 @@ register_nav_menu( 'top-menu-nav', 'Primary Header Menu' );
 
 
 // Register style sheet.
-
+                             
 
 
 function register_dils_portfolio_styles() {
@@ -132,6 +132,31 @@ function do_output_buffer() {
    <?php } 
 
 
+
+function dpt_insert_post_format_icon(){  
+
+    $format = get_post_format();
+    if ( false === $format ) {
+        $format = 'standard';
+        echo '<i class="fa fa-file-text-o"></i>';
+
+    }
+    elseif ($format == 'image'){
+        echo '<i class="fa fa-picture-o"></i>';   
+    }
+    elseif ($format == 'gallery'){
+        echo '<i class="fa fa-th"></i>';
+    }
+    elseif ($format == 'video'){
+        echo '<i class="fa fa-video-camera"></i>';
+    }
+    elseif ($format == 'audio'){
+        echo '<i class="fa fa-volume-down"></i>';
+    }
+    else{
+        return;
+    }
+}
 
 
 
