@@ -39,7 +39,7 @@ if(is_archive() && 'dpt_portfolio' != get_post_type() or $is_blog == true){
             'hierarchical'       => 0,
             'title_li'           => __( '' ),
             'show_option_none'   => __( 'No categories' ),
-            'number'             => 10,
+            'number'             => 20,
             'echo'               => 1,
             'depth'              => 0,
             'current_category'   => 0,

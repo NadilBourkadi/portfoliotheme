@@ -56,5 +56,7 @@
                 <?php endif; ?>
     <?php endwhile; ?>
 <?php else: ?>
-    <h1 class="page-title">No Postsd Found</h1>
+    <h1 class="page-title">No Posts Found</h1>
 <?php endif; ?>
+
+</div>

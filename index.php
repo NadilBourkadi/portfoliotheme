@@ -5,7 +5,6 @@
 
 
 <div class="main-content">
-    <?php get_template_part('categorybar'); ?>
     <div class="col-lg-12">
 
         <div class="top-hero">
@@ -30,12 +29,14 @@
                         rewind_posts(); 
                     }
                 ?></h1>
-                <h3 class="sub-title">This is a filler sentence to see how it looks.</h3>
+                <h3 class="sub-title">Filter by <span class="toggle-on" href="">Tag</span> / <span class="toggle-on" href="">Category</span></h3>
 
 
 
             </div>
+
         </div>
+        <?php get_template_part('categorybar'); ?>
 
         
         
@@ -53,7 +54,7 @@
 
 
 
-    </div>
+    
 
 
 <?php get_template_part('paginationbar'); ?>

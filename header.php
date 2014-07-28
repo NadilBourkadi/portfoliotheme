@@ -24,7 +24,11 @@
             
  
         </ul> -->
+        <?php wp_enqueue_script("jquery"); ?>
+        
         <?php wp_head(); ?>
+        <script type="text/javascript"
+        src="<?php bloginfo("template_url"); ?>/js/ui-scripts.js"></script>
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
         
         <?php wp_nav_menu(array(

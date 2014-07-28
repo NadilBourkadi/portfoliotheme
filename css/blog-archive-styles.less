@@ -106,10 +106,14 @@
                     }
                     .post-meta-container{
 
+                        i{
+                            padding-right: 5px;
+                        }
+
                         p{
                             font-size: 15px;
                             color: @darker-blue;
-                             text-align: left;
+                            text-align: left;
                         }
                         .post-meta-author,.post-meta-time,.post-meta-date{
                             color: lighten(@dark-blue, 15%);
@@ -158,6 +162,11 @@
                         margin: 10px 0px;
                         margin-bottom: 20px;
                         width: 100%;
+
+                        i{
+                            padding-right: 5px;
+
+                        }
 
                         
                         p{
@@ -223,6 +232,14 @@
     }
 }
 
-h1.portfolio-entry-title .fa{
-    margin-right: 5px;
+h1.portfolio-entry-title{ 
+    position: relative;
+
+    .fa{
+        margin-right: 5px;
+        font-size: 35px;
+        line-height: inherit;
+        vertical-align: middle;
+        margin-top: -6px;
+    }
 }

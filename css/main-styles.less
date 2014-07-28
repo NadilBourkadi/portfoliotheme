@@ -184,6 +184,15 @@ body{
             color: lighten(@mid-blue, 15%);
             
         }
+
+        span{
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover{
+                background: @silver;
+            }
+        }
         
 
     }
@@ -270,13 +279,12 @@ footer {
 
 div.category-bar{
   
-   padding: 0px 40px;
+  
 
    background: lighten(@light-gray, 1%);
-   border-bottom: 1px solid @silver;
-   height: 51px;
-   overflow: hidden;
-   padding-top: 10px;
+   border-top: 1px solid @silver;
+   max-height: 0px;
+  
    
 
 
@@ -284,8 +292,9 @@ div.category-bar{
    text-align: left;
    
     div.category-dropdown{
+        margin-top: 20px;
         position: relative;
-        display: inline-block;
+        
         padding-right: 40px;
 
     
@@ -296,7 +305,8 @@ div.category-bar{
             font-family: 'Lato';
             font-size: 20px;
             line-height: 18px;
-            padding-left: 20px;
+            margin-bottom: 15px;
+            
 
             
             
@@ -318,6 +328,8 @@ div.category-bar{
     }   
 
     ul { 
+        padding-left: 25px;
+        margin-bottom: 20px;
         a{
             color: @dark-blue;
             height: 100%;
@@ -335,7 +347,7 @@ div.category-bar{
         color: lighten(@dark-blue, 20%);
        
         font-family: 'Lato';
-       
+
         li{
             display: inline-block;
             position: relative;
@@ -343,10 +355,11 @@ div.category-bar{
             line-height: 18px;
             
             background: @light-gray;
-            margin: 0px 5px;
+            margin: 5px;
+            margin-left: 0;
+            margin-bottom: 0;
             padding: 5px 10px;
             border-radius: 2px;
-            margin-bottom: 20px;
             border: 1px solid lighten(@silver,5%);
 
             &.current-cat{

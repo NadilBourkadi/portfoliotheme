@@ -30,9 +30,9 @@
                         </a>
 
                         <div class="col-lg-12 post-meta-container">
-                            <p>by <span class="post-meta-author"><?php the_author(); ?></span>              
+                            <p><i class="fa fa-user"></i> <span class="post-meta-author"><?php the_author(); ?></span>              
                             </p>
-                            <p>at <span class="post-meta-time"><?php the_time(); ?>, </span><span class="post-meta-date"><?php the_date(); ?></span></p>
+                            <p><i class="fa fa-clock-o"></i> <span class="post-meta-time"><?php the_time(); ?>, </span><span class="post-meta-date"><?php the_date(); ?></span></p>
                         </div>
                     </div>
                     
@@ -79,8 +79,8 @@
                         </a>
 
                         <div class="col-lg-12 post-meta-container">
-                            <p>by <span class="post-meta-author"><?php the_author(); ?></span></p>
-                            <p>at <span class="post-meta-time"><?php the_time(); ?>, </span><span class="post-meta-date"><?php the_date(); ?></span></p>
+                            <p><i class="fa fa-user"></i> <span class="post-meta-author"><?php the_author(); ?></span></p>
+                            <p><i class="fa fa-clock-o"></i> <span class="post-meta-time"><?php the_time(); ?>, </span><span class="post-meta-date"><?php the_date(); ?></span></p>
                         </div>
                     </div>
 
@@ -91,3 +91,6 @@
 <?php else: ?>
     <h1 class="page-title">No Posts Found</h1>
 <?php endif; ?>
+
+</div>
+
